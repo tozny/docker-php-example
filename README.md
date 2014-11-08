@@ -15,4 +15,4 @@ Run an instance of the Docker image on port 8080.
 docker run -d -p 8080:80 tozny/docker-php-example
 ```
 
-Navigate to http://localhost:8080
+Navigate to `http://localhost:8080`
