@@ -3,8 +3,7 @@
 # The Tozny Variables
 define('TOZ_REALM_KEY_ID','<YOUR REALM KEY ID>');
 define('TOZ_SECRET_KEY_SECRET','<YOUR REALM SECRET>');
-#define('TOZ_API_URL','https://api.tozny.com/index.php');
-define('TOZ_API_URL','https://sandbox.tozny.com/api-unstable/index.php');
+define('TOZ_API_URL','https://api.tozny.com/index.php');
 
 # Turn sessions on
 session_start();
