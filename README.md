@@ -3,7 +3,7 @@ docker-php-example
 
 A simple 'Hello World' example of Tozny authentication using Apache and Docker.
 
-Edit `index.php`, replace TOZ_REALM_KEY_ID and TOZ_SECRET_KEY_SECRET with your key information.
+Edit `index.php`, replace `TOZ_REALM_KEY_ID` and `TOZ_SECRET_KEY_SECRET` with your key information.
 
 Build the Docker image.
 ```
