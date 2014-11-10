@@ -2,7 +2,7 @@
 
 # The Tozny Variables
 define('TOZ_REALM_KEY_ID','<YOUR REALM KEY ID>');
-define('TOZ_SECRET_KEY_SECRET','<YOUR REALM SECRET>');
+define('TOZ_REALM_KEY_SECRET','<YOUR REALM KEY SECRET>');
 define('TOZ_API_URL','https://api.tozny.com/index.php');
 
 # Turn sessions on
@@ -14,7 +14,7 @@ require_once('ToznyRemoteRealmAPI.php');
 # Create the Tozny object
 $tozny = new Tozny_Remote_Realm_API(
 	TOZ_REALM_KEY_ID,
-	TOZ_SECRET_KEY_SECRET,
+	TOZ_REALM_KEY_SECRET,
 	TOZ_API_URL
 );
 
