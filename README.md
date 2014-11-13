@@ -30,9 +30,7 @@ Running the PHP example with Docker
      * replace the <YOUR REALM KEY SECRET> with your realm key secret.
 4. Build the docker image:`docker build -t 'tozny/php-example`
 5. Run the built image on port 8080:`docker run -d -p 8080:80 tozny/php-example`
-6. Navigate to `http://your-docker-server:8080/`. 
-If you are running Docker on your mac, run `boot2docker ip` to get your server's IP address
-
+6. Navigate to `http://your-docker-server:8080/`. If you are running Docker on your mac, run `boot2docker ip` to get your server's IP address
 7. Click "Log in with Tozny"
 8. Scan the QR code.
 9. You should see the '**You're logged in!**' message. 
