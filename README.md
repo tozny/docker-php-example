@@ -1,6 +1,6 @@
 docker-php-example
 ==================
-A minimal example for integrating Tozny any PHP-enabled webserver
+The Tozny PHP Example is a minimal example of integrating Tozny with any PHP-enabled web-server, or on any system with Docker installed.
 
 Prerequisites
 -------------
