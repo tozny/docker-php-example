@@ -4,7 +4,7 @@
 # The Tozny Variables
 #######################################################################
 define('REALM_KEY_ID','<YOUR REALM KEY ID>');
-define('REALM_KEY_SECRET','<YOUR REALM SECRET>');
+define('REALM_KEY_SECRET','<YOUR REALM KEY SECRET>');
 define('API_URL','https://api.tozny.com/index.php');
 #######################################################################
 
