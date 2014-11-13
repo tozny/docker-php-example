@@ -1,9 +1,13 @@
 <?php
 
+#######################################################################
 # The Tozny Variables
-define('TOZ_REALM_KEY_ID','<YOUR REALM KEY ID>');
-define('TOZ_SECRET_KEY_SECRET','<YOUR REALM SECRET>');
-define('TOZ_API_URL','https://api.tozny.com/index.php');
+#######################################################################
+define('REALM_KEY_ID','<YOUR REALM KEY ID>');
+define('REALM_KEY_SECRET','<YOUR REALM SECRET>');
+define('API_URL','https://api.tozny.com/index.php');
+#######################################################################
+
 
 # Turn sessions on
 session_start();
@@ -13,9 +17,9 @@ require_once('ToznyRemoteRealmAPI.php');
 
 # Create the Tozny object
 $tozny = new Tozny_Remote_Realm_API(
-	TOZ_REALM_KEY_ID,
-	TOZ_SECRET_KEY_SECRET,
-	TOZ_API_URL
+    getenv('REALM_KEY_ID') ?: REALM_KEY_ID,
+    getenv('REALM_KEY_SECRET') ?: REALM_KEY_SECRET,
+	API_URL
 );
 
 # Login
@@ -87,8 +91,8 @@ if(!empty($_REQUEST['logout'])){
 					"style": "button",
 					"theme": "light",
 					"button_theme": "light",
-					"realm_key_id": "<?= TOZ_REALM_KEY_ID?>",
-					"api_url": "<?= TOZ_API_URL?>",
+					"realm_key_id": "<?= getenv('REALM_KEY_ID') ?: REALM_KEY_ID?>",
+					"api_url": "<?= API_URL?>",
 					"form_action":"index.php"
 				});
 			});
