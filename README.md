@@ -11,7 +11,7 @@ Prerequisites
  
 Running the PHP example on a PHP-enabled web server
 ---------------------------------------------------
-1. Click here to download the Tozny PHP-Example zip file from GitHub.
+1. [Click here](https://github.com/tozny/docker-php-example/archive/master.zip) to download the Tozny PHP-Example zip file from GitHub.
 2. Unzip and move the contents of the archive to a sub-directory within your web server's web-root folder. 
 3. Edit index.php
      * replace the <YOUR REALM KEY ID> with your realm key id.
@@ -23,7 +23,7 @@ Running the PHP example on a PHP-enabled web server
 
 Running the PHP example with Docker 
 -----------------------------------
-1. Click here to download the Tozny PHP-Example zip file from GitHub.
+1. [Click here](https://github.com/tozny/docker-php-example/archive/master.zip) to download the Tozny PHP-Example zip file from GitHub.
 2. Unzip the contents of the archive, change into the extracted directory.
 3. Edit index.php
      * replace the <YOUR REALM KEY ID> with your realm key id.
