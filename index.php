@@ -19,7 +19,7 @@ require_once('ToznyRemoteRealmAPI.php');
 $tozny = new Tozny_Remote_Realm_API(
     getenv('REALM_KEY_ID') ?: REALM_KEY_ID,
     getenv('REALM_KEY_SECRET') ?: REALM_KEY_SECRET,
-	API_URL
+    getenv('API_URL') ?: API_URL
 );
 
 # Login
@@ -92,7 +92,7 @@ if(!empty($_REQUEST['logout'])){
 					"theme": "light",
 					"button_theme": "light",
 					"realm_key_id": "<?= getenv('REALM_KEY_ID') ?: REALM_KEY_ID?>",
-					"api_url": "<?= API_URL?>",
+					"api_url": "<?= getenv('API_URL') ?: API_URL?>",
 					"form_action":"index.php"
 				});
 			});
